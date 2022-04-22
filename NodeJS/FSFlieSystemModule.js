@@ -16,7 +16,7 @@ const read = () =>{
 const update = () =>{
     fs.appendFile('employees.json','utf8',(err)=>{
         if(err) console.log(err);
-        else console.log("GUNCELLENDI");
+        else console.log("Güncellendi");
         deleteFile();
     })
 }
@@ -24,6 +24,6 @@ const update = () =>{
 const deleteFile = () =>{
     fs.unlink('employees.json',(err)=>{
         if(err) console.log(err);
-        else console.log('DOSYA SILINDI');
+        else console.log('Dosya Silindi');
     })
 }
