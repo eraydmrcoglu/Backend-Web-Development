@@ -1,0 +1,61 @@
+<%- include('partials/_header.ejs') %>
+<body>
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+
+			  <%- include('partials/_nav.ejs') %>  
+
+			
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+		</div>
+
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<img src="<%= photo.image %>" alt="Image" class="img-fluid tm-catalog-item-img">
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div class="col-xl-8 col-lg-7">
+							<!-- Video description -->
+							<div class="tm-video-description-box">
+								<h2 class="mb-5 tm-video-title"><%= photo.title %> </h2>
+								<p class="mb-4"><%= photo.detail %></p>	
+							</div>							
+						</div>
+						<div class="col-xl-4 col-lg-5">
+							<!-- Share box -->
+							<div class="tm-bg-gray tm-share-box">
+								<div class="text-center">
+									<a href="/photo/edit/<%= photo.id %>" class="btn btn-primary p-0 mb-4 tm-btn-animate tm-btn-download tm-icon-download"><span>Update Details</span></a>	
+								</div>	
+								<div class="text-center">
+									<a href="/photo/<%= photo.id %>?_method=DELETE" 
+										class="btn btn-danger p-0 tm-btn-animate tm-btn-download tm-icon-download"
+										onclick="return confirm('ARE YOU SURE?')"
+									><span>Delete Photo</span></a>	
+								</div>								
+							</div>
+						</div>
+					</div>
+				</main>
+                <%- include ('partials/_footer.ejs') %> 
+    
+</body>
+</html>
