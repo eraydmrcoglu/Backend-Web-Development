@@ -1,0 +1,143 @@
+<!-- Add Portfolio -->
+<section class="page-section" id="add">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading text-uppercase">Add Portfolio</h2>
+      <h3 class="section-subheading text-muted">
+        Lorem ipsum dolor sit amet consectetur.
+      </h3>
+    </div>
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- * * SB Forms add Form * *-->
+    <!-- * * * * * * * * * * * * * * *-->
+    <!-- This form is pre-integrated with SB Forms.-->
+    <!-- To make this form functional, sign up at-->
+    <!-- https://startbootstrap.com/solution/add-forms-->
+    <!-- to get an API token!-->
+    <form
+      method="post"
+      action="/portfolio"
+      id="addForm"
+      encType="multipart/form-data"
+    >
+      <div class="row align-items-stretch mb-5">
+        <div class="col-md-6">
+          <div class="form-group">
+            <!-- Name input-->
+            <input
+              class="form-control"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Project Name *"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="name:required">
+              A name is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Title input-->
+            <input
+              class="form-control"
+              id="title"
+              name="title"
+              type="text"
+              placeholder="Project Title *"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="title:required">
+              A project title is required.
+            </div>
+          </div>
+          <div class="form-group">
+            <!-- Client input-->
+            <input
+              class="form-control"
+              id="client"
+              name="client"
+              type="client"
+              placeholder="Your Client *"
+              data-sb-validations="required,client"
+            />
+            <div class="invalid-feedback" data-sb-feedback="client:required">
+              A client is required.
+            </div>
+          </div>
+          <div class="form-group mb-md-0">
+            <!-- Category number input-->
+            <input
+              class="form-control"
+              id="category"
+              name="category"
+              type="tel"
+              placeholder="Your Category *"
+              data-sb-validations="required"
+            />
+            <div class="invalid-feedback" data-sb-feedback="category:required">
+              A category name is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="form-group form-group-textarea mb-md-0">
+              <!-- Description input-->
+              <textarea
+                class="form-control"
+                id="description"
+                name="description"
+                placeholder="Portfolio Description *"
+                data-sb-validations="required"
+              ></textarea>
+              <div
+                class="invalid-feedback"
+                data-sb-feedback="description:required"
+              >
+                A description is required.
+              </div>
+            </div>
+            <div class="form-group form-group-file w-3 mb-md-0">
+              <input
+                type="file"
+                name="image"
+                class="form-control-file rounded-0"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Submit success message-->
+      <!---->
+      <!-- This is what your users will see when the form-->
+      <!-- has successfully submitted-->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center text-white mb-3">
+          <div class="fw-bolder">Form submission successful!</div>
+          To activate this form, sign up at
+          <br />
+          <a href="https://startbootstrap.com/solution/add-forms"
+            >https://startbootstrap.com/solution/add-forms</a
+          >
+        </div>
+      </div>
+      <!-- Submit error message-->
+      <!---->
+      <!-- This is what your users will see when there is-->
+      <!-- an error submitting the form-->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+      <!-- Submit Button-->
+      <div class="text-center">
+        <button
+          class="btn btn-primary btn-xl text-uppercase disabled"
+          id="submitButton"
+          type="submit"
+        >
+          Send Portfolio
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
