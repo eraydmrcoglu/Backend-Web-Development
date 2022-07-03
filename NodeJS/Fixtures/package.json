@@ -1,0 +1,29 @@
+{
+  "name": "fixtures",
+  "version": "1.0.0",
+  "description": "Fixtures Portal",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "Fixtures",
+    "portal",
+    "nodejs"
+  ],
+  "author": "Eray Demircioğlu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-mongo": "^4.4.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "install": "^0.13.0",
+    "mongoose": "^5.12.13",
+    "slugify": "^1.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
