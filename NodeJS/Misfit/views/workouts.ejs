@@ -1,0 +1,44 @@
+<%-include('partials/_header.ejs')%>
+<%-include('partials/_navigation.ejs')%>
+        <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                   <h2>Trainer Workout</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- trainers -->
+      <div  class="trainers">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <p>Lorem Ipsum available, but the majority have suffered </p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+       <% for (let i=0; i< workouts.length; i++) { %>
+               <div class="col-md-4">
+                  <div id="trai" class="trainer_box">
+                     <a href="/workouts/<%= workouts[i].slug%>">
+                     <div class="trainer_img">
+                        <figure><img src="images/tra.jpg" alt="#"/></figure>
+                     </div>
+                   </a>
+                     <div class="trainer">
+                        <h3><%= workouts[i].name %></h3>
+                        <p><%= workouts[i].description%></p>
+                     </div>
+                  </div>
+               </div>
+        <%}%> 
+            </div>
+         </div>
+      </div>
+      <!-- end trainers -->
+      <%-include('partials/_footer.ejs')%>

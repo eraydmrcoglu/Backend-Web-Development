@@ -1,0 +1,29 @@
+<%-include('partials/_header.ejs')%>
+<%-include('partials/_navigation.ejs')%>
+        <div class="back_re">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="title">
+                   <h2>Trainer Workout</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- trainers -->
+      <div class="row">
+         <div class="d-flex justify-content-center col-md-12 mt-4 ">
+            <div class="">
+               <div class="trainer_img">
+               <img src="/images/tra.jpg"/>
+               </div>
+               <div class="trainer text-center m-2">
+                  <h3><%=workout.name %></h3>
+                  <p><%=workout.description%></p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end trainers -->
+      <%-include('partials/_footer.ejs')%>
